@@ -372,7 +372,62 @@
 <p>只要有需求分析的过程,就邀请用户(客户)过来,一起讨论分析需求的合理性。在设计阶段完成后,把用户、程序员、测试工程师叫在一起开个会,看看需求分析、设计的工作是否满足需求,考虑下测试时候，现在的设计会不会在以后发生什么情况(如：需求不符合用户要求),进行小型的迭代更新</p>
 </blockquote>
 <p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20190922231418.png" alt="灵魂画师"></p>
-<h2 id="测试模型"><a href="#测试模型" class="headerlink" title="测试模型"></a>测试模型</h2>
+<h2 id="测试模型"><a href="#测试模型" class="headerlink" title="测试模型"></a>测试模型</h2><p>随着测试过程的管理和发展,测试人员通过大量的实践,从而总结出了不少测试模型,如常见的<code>V模型</code>、<code>W模型</code>、H模型等.<code>这些模型与开发紧密结合</code>,对测试活动进行了抽象,成为了测试过程管理的重要参考依据.</p>
+<p><del>❓ 测试的过程和软件开发的过程一样吗？是否有很多看上去很专业,似乎很有内涵的模型呢？</del></p>
+<h3 id="V模型"><a href="#V模型" class="headerlink" title="V模型"></a>V模型</h3><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20190924194516.png" alt="V模型示意图"></p>
+<ul>
+<li>V模型是具有代表意义的测试模型,旨在改进软件开发的效率和效果;</li>
+<li>V模型推出之前,人们通常把测试过程作为在需求分析、概要设计、详细设计、编码全部<code>完成之后的一个阶段</code>,尽管当时已经出现了测试工作会<code>占用这个项目周期一半的时间</code>,但是大多数人认为测试只是一个收尾工作;V模型在这个时候推出,就是为了改变之前行业的普遍认识.</li>
+<li>V模型本身是<code>软件开发中瀑布模型的变种</code>,它反映了测试活动与分析和设计的关系.</li>
+<li>V模型标明了测试过程中本身存在的不同阶段,从左到右,描述了开发过程和测试过程的阶段对应关系.</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20190924195220.png" alt="V模型"></p>
+<h3 id="V模型的剖析"><a href="#V模型的剖析" class="headerlink" title="V模型的剖析"></a>V模型的剖析</h3><h4 id="开发阶段-V的左边"><a href="#开发阶段-V的左边" class="headerlink" title="开发阶段(V的左边)"></a>开发阶段(V的左边)</h4><ul>
+<li>需求分析</li>
+</ul>
+<blockquote>
+<p><strong>用户需求、业务需求、需求规格说明书(需求文档)</strong></p>
+</blockquote>
+<p>1.软件开发之前,一定要进行分析(包括用户需求、业务需求).用户需求和业务需求都了解之后,把它们都总结好写入文档(就是规格说明书),让用户签字确认</p>
+<ul>
+<li>概要设计</li>
+</ul>
+<blockquote>
+<p><strong>系统架构、模块划分、模块与模块之间的接口</strong></p>
+</blockquote>
+<p>1.系统架构:看采用的是B/S结构(浏览器/服务器)还是C/S(客户端/服务端)结构;</p>
+<p>2.模块划分:例如bilibili网站中有音频区啊、鬼畜区啊等等,这些就划分成了一个个小小的模块;</p>
+<p>3.模块与模块之间的接口:例如一个购物网站,当你在没有登录账号的情况下,想完成一个点击收藏的动作,购物网站会跳转到用户登录的模块提示的登录.</p>
+<ul>
+<li>详细设计<blockquote>
+<p><strong>模块内部实现的逻辑和方法</strong></p>
+</blockquote>
+</li>
+</ul>
+<p>1.例如一个使用微信过程,当用户成功登录后,选择好友,在输入框输入文字或者图片,发送成功.这个过程就是逻辑.</p>
+<ul>
+<li>编码<blockquote>
+<p><strong>实现上面的设计</strong></p>
+</blockquote>
+</li>
+</ul>
+<p>1.代码实现上面的设计</p>
+<h4 id="测试阶段-V的右边"><a href="#测试阶段-V的右边" class="headerlink" title="测试阶段(V的右边)"></a>测试阶段(V的右边)</h4><ul>
+<li>单元测试<blockquote>
+<p>又称模块测试,针对软件设计中的最小单位—程序模块,进行正确性检查的测试工作.单元测试需要从程序的内部结构出发设计测试用例。多个模块可以平行地独立进行单元测试.</p>
+</blockquote>
+</li>
+</ul>
+<p>单元定义:C中指一个函数,java中只一个类,在图形化的软件中,单元一般指一个窗口,1个菜单.例一个购物网站：首页、购物列表、购物详情页、购物列表页等等</p>
+<ul>
+<li>集成测试<blockquote>
+<p>又叫组装测试,通常在单元测试的基础上,将所有程序模块进行有序的、递增的测试.重点测试不同模块的接口部分(就是把单元测试拼在一起来测试)。</p>
+</blockquote>
+</li>
+</ul>
+<p>❓ 为什么单元测试完了,又要进行集成测试</p>
+<p>app中的每个模块都是互相联系的,单一模块测试可能没有问题,但是各模块连在一起测试就有可能会出错.</p>
+
       </div>
       
         <br>
@@ -383,10 +438,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-23T10:27:44+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-24T22:45:01+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>updated at Sep 23, 2019</p>
+    <p>updated at Sep 24, 2019</p>
   </a>
 </div>
 
@@ -577,7 +632,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#软件工程和V模型"><span class="toc-text">软件工程和V模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#软件开发过程模型"><span class="toc-text">软件开发过程模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#瀑布模型"><span class="toc-text">瀑布模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件测试-amp-软件工程"><span class="toc-text">软件测试&amp;软件工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试模型"><span class="toc-text">测试模型</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#软件工程和V模型"><span class="toc-text">软件工程和V模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#软件开发过程模型"><span class="toc-text">软件开发过程模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#瀑布模型"><span class="toc-text">瀑布模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件测试-amp-软件工程"><span class="toc-text">软件测试&amp;软件工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试模型"><span class="toc-text">测试模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#V模型"><span class="toc-text">V模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#V模型的剖析"><span class="toc-text">V模型的剖析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#开发阶段-V的左边"><span class="toc-text">开发阶段(V的左边)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#测试阶段-V的右边"><span class="toc-text">测试阶段(V的右边)</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -720,7 +775,7 @@
         
           <li><a class="flat-box" title="/categories/好文收藏/" href="/categories/好文收藏/"><div class='name'>好文收藏</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/水文一篇/" href="/categories/水文一篇/"><div class='name'>水文一篇</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/水文一篇/" href="/categories/水文一篇/"><div class='name'>水文一篇</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box" title="/categories/测试理论/" href="/categories/测试理论/"><div class='name'>测试理论</div><div class='badge'>(3)</div></a></li>
         
@@ -779,7 +834,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/Android/" style="font-size: 17.33px; color: #828282">Android</a> <a href="/tags/Flutter/" style="font-size: 14px; color: #999">Flutter</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Selenium/" style="font-size: 17.33px; color: #828282">Selenium</a> <a href="/tags/Web测试/" style="font-size: 14px; color: #999">Web测试</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/java/" style="font-size: 14px; color: #999">java</a> <a href="/tags/npm/" style="font-size: 14px; color: #999">npm</a> <a href="/tags/水文一篇/" style="font-size: 17.33px; color: #828282">水文一篇</a> <a href="/tags/测试理论/" style="font-size: 20.67px; color: #6c6c6c">测试理论</a> <a href="/tags/环境搭建/" style="font-size: 20.67px; color: #6c6c6c">环境搭建</a> <a href="/tags/算法训练/" style="font-size: 14px; color: #999">算法训练</a> <a href="/tags/自动化测试/" style="font-size: 24px; color: #555">自动化测试</a>
+      <a href="/tags/Android/" style="font-size: 17.33px; color: #828282">Android</a> <a href="/tags/Flutter/" style="font-size: 14px; color: #999">Flutter</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Selenium/" style="font-size: 17.33px; color: #828282">Selenium</a> <a href="/tags/Web测试/" style="font-size: 14px; color: #999">Web测试</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/java/" style="font-size: 14px; color: #999">java</a> <a href="/tags/npm/" style="font-size: 14px; color: #999">npm</a> <a href="/tags/水文一篇/" style="font-size: 20.67px; color: #6c6c6c">水文一篇</a> <a href="/tags/测试理论/" style="font-size: 20.67px; color: #6c6c6c">测试理论</a> <a href="/tags/环境搭建/" style="font-size: 20.67px; color: #6c6c6c">环境搭建</a> <a href="/tags/算法训练/" style="font-size: 14px; color: #999">算法训练</a> <a href="/tags/自动化测试/" style="font-size: 24px; color: #555">自动化测试</a>
     </div>
   </section>
 
