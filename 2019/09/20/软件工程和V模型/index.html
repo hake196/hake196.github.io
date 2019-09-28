@@ -27,6 +27,8 @@
   
 
   
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/favicon.ico">
+  
 
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.9.9/css/style.css">
@@ -154,7 +156,7 @@
 			
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="Search" />
+						<input type="text" class="input u-search-input" placeholder="搜索" />
 						<i class="icon fas fa-search fa-fw"></i>
 					</form>
 				</div>
@@ -365,11 +367,11 @@
 <ul>
 <li>要关注软件工程、质量管理以及配置管理与软件测试的关系;在不同的开发模式下,如何进行软件测试.</li>
 </ul>
-<p>开发模式有瀑布型、螺旋型、迭代型、快速型等等模型,各种模型有各自优缺点。瀑布型在软件开发中最为常用,虽然存在缺点,但软件工程的管理者在此模型基础上进行了改良变更,发明了快速开发模型,更好地适应需求频繁更变的情况</p>
+<p>开发模式有瀑布型、螺旋型、迭代型、快速型等等模型,各种模型有各自优缺点.瀑布型在软件开发中最为常用,虽然存在缺点,但软件工程的管理者在此模型基础上进行了改良变更,发明了快速开发模型,更好地适应需求频繁更变的情况</p>
 <p>❗ 补充</p>
 <p>敏捷型开发模型：</p>
 <blockquote>
-<p>只要有需求分析的过程,就邀请用户(客户)过来,一起讨论分析需求的合理性。在设计阶段完成后,把用户、程序员、测试工程师叫在一起开个会,看看需求分析、设计的工作是否满足需求,考虑下测试时候，现在的设计会不会在以后发生什么情况(如：需求不符合用户要求),进行小型的迭代更新</p>
+<p>只要有需求分析的过程,就邀请用户(客户)过来,一起讨论分析需求的合理性.在设计阶段完成后,把用户、程序员、测试工程师叫在一起开个会,看看需求分析、设计的工作是否满足需求,考虑下测试时候，现在的设计会不会在以后发生什么情况(如：需求不符合用户要求),进行小型的迭代更新</p>
 </blockquote>
 <p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20190922231418.png" alt="灵魂画师"></p>
 <h2 id="测试模型"><a href="#测试模型" class="headerlink" title="测试模型"></a>测试模型</h2><p>随着测试过程的管理和发展,测试人员通过大量的实践,从而总结出了不少测试模型,如常见的<code>V模型</code>、<code>W模型</code>、H模型等.<code>这些模型与开发紧密结合</code>,对测试活动进行了抽象,成为了测试过程管理的重要参考依据.</p>
@@ -414,19 +416,56 @@
 <p>1.代码实现上面的设计</p>
 <h4 id="测试阶段-V的右边"><a href="#测试阶段-V的右边" class="headerlink" title="测试阶段(V的右边)"></a>测试阶段(V的右边)</h4><ul>
 <li>单元测试<blockquote>
-<p>又称模块测试,针对软件设计中的最小单位—程序模块,进行正确性检查的测试工作.单元测试需要从程序的内部结构出发设计测试用例。多个模块可以平行地独立进行单元测试.</p>
+<p>又称模块测试,针对软件设计中的最小单位—程序模块,进行正确性检查的测试工作.单元测试需要从程序的内部结构出发设计测试用例.多个模块可以平行地独立进行单元测试.<code>检测代码的开发是否符合详细设计的要求.</code></p>
 </blockquote>
 </li>
 </ul>
-<p>单元定义:C中指一个函数,java中只一个类,在图形化的软件中,单元一般指一个窗口,1个菜单.例一个购物网站：首页、购物列表、购物详情页、购物列表页等等</p>
+<p>单元定义:C中指一个函数,java中指一个类,在图形化的软件中,单元一般指一个窗口,1个菜单.例一个购物网站：首页、购物列表、购物详情页、购物列表页等等</p>
 <ul>
 <li>集成测试<blockquote>
-<p>又叫组装测试,通常在单元测试的基础上,将所有程序模块进行有序的、递增的测试.重点测试不同模块的接口部分(就是把单元测试拼在一起来测试)。</p>
+<p>又叫组装测试,通常在单元测试的基础上,将所有程序模块进行有序的、递增的测试.重点测试不同模块的接口部分(就是把单元测试拼在一起来测试).<code>检测此前测试的各组成部分能完好地结合在一起.</code></p>
+</blockquote>
+</li>
+<li>系统测试<blockquote>
+<p>就是把你整个软件的整体流程，一整套流程(整体流程)全测完.不是字面意思把软件放在windows、macos 系统测试.<code>检测已集成在一起的产品是否符合系统规格说明书的要求</code></p>
+</blockquote>
+</li>
+<li>验收测试<blockquote>
+<p>检测产品是否符合最终<code>用户的需求</code>.</p>
 </blockquote>
 </li>
 </ul>
 <p>❓ 为什么单元测试完了,又要进行集成测试</p>
 <p>app中的每个模块都是互相联系的,单一模块测试可能没有问题,但是各模块连在一起测试就有可能会出错.</p>
+<h3 id="V模型的优点"><a href="#V模型的优点" class="headerlink" title="V模型的优点"></a>V模型的优点</h3><p><strong>开发V模型即包含了底层测试又包含了高层测试</strong></p>
+<ul>
+<li><p>底层测试：检验源代码质量的测试,如：单元测试;</p>
+</li>
+<li><p>高层测试：检验整个系统的需要,如：系统测试;</p>
+</li>
+</ul>
+<p><strong>V模型清除地标识出了软件开发的阶段.</strong></p>
+<fancybox>
+![清晰的软件开发流程](https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/2019092419451xx.png)
+</fancybox>
+
+<p><strong>它采用自顶向下逐步<code>求精</code>的方式把整个开发过程分成不同的阶段,每个阶段的工作都很明确,因此便于控制开发过程.当所有的阶段都完成之后,该软件的开发过程也随之结束</strong></p>
+<h3 id="V模型的缺点"><a href="#V模型的缺点" class="headerlink" title="V模型的缺点"></a>V模型的缺点</h3><blockquote>
+<p>V模型一大缺点正是自身的顺序性所导致.到了测试阶段,程序已经完成,错误已经产生,很多前期的错误一直到测试阶段才发现,甚至无法发现,往往不好改或者无从修改了(思考下程序写好了,各模块关联度高的情况下修改代码的蛋疼时刻😱)</p>
+</blockquote>
+<blockquote>
+<p>同时实际的开发过程中,在需求阶段很难把用户的需求完全明确下来,同时,当需求变更时将会导致阶段反复,而且都要重复需求、设计、编码、设计、编码、测试等过程,返工量非常大,模型灵活性比较低.</p>
+</blockquote>
+<ul>
+<li>(使用了这种V模型开发了)在<code>需求分析</code>阶段没有把用户需求挖掘完美(产品经理跟用户直接对接),又或者产品经理没有把用户需求直接拿捏的准确,就会导致需求分析这阶段没做好(需求分析不到位)、概要分析、详细设计等等这些东西没做好,等到做测试阶段了,用户却发现你这程序缺这缺那的,结果你就往要完成的程序中加东西.加东西又要经过上面的步骤(V模型的步骤重来)：需求分析》概要设计》详细设计……，时间、工作量增加,太难了,不够灵活.</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/201909241945168221x.png" alt="返工"></p>
+<ul>
+<li><p>如果在V模型的模型基础上，进行小的敏捷型迭代工作的话：遇到需求有问题的话,那么我们就随时随地的改。改的越早就相当于需求变更的频繁,需求变更的越频繁,后期出现的问题就小一些。<code>(这就是根据V模型的敏捷型改进)</code></p>
+</li>
+<li><p>虽然V模型的确灵活度较低,但实际工作当中一定会进行一些小的产品迭代的.还有一个情况就是,在一开始时，进行需求分析、概要设计、详细设计等等阶段都要给用户确认,用户觉得不行就会随时随地的进行修改，这才是我们最想得到完美结果.</p>
+</li>
+</ul>
 
       </div>
       
@@ -438,10 +477,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-24T22:45:01+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-29T00:44:28+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>updated at Sep 24, 2019</p>
+    <p>更新于 2019年9月29日</p>
   </a>
 </div>
 
@@ -457,7 +496,7 @@
               
                   <section class="prev">
                       <span class="art-item-left">
-                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
+                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                           <h4>
                               <a href="/2019/09/21/好文收藏9-21/" rel="prev" title="好文收藏9.21">
                                 
@@ -477,7 +516,7 @@
               
                   <section class="next">
                       <span class="art-item-right" aria-hidden="true">
-                          <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
                               <a href="/2019/09/19/软件测试的原则-二/" rel="prev" title="软件测试的原则(二)">
                                   
@@ -507,7 +546,7 @@
 
   <article class="post white-box comments">
     <section class="article typo">
-      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;Comments</h4>
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
       
       
       
@@ -625,14 +664,14 @@
   <section class='widget toc-wrapper'>
     
 <header class='pure'>
-  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
   
     <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
   
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#软件工程和V模型"><span class="toc-text">软件工程和V模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#软件开发过程模型"><span class="toc-text">软件开发过程模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#瀑布模型"><span class="toc-text">瀑布模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件测试-amp-软件工程"><span class="toc-text">软件测试&amp;软件工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试模型"><span class="toc-text">测试模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#V模型"><span class="toc-text">V模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#V模型的剖析"><span class="toc-text">V模型的剖析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#开发阶段-V的左边"><span class="toc-text">开发阶段(V的左边)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#测试阶段-V的右边"><span class="toc-text">测试阶段(V的右边)</span></a></li></ol></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#软件工程和V模型"><span class="toc-text">软件工程和V模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#软件开发过程模型"><span class="toc-text">软件开发过程模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#瀑布模型"><span class="toc-text">瀑布模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件测试-amp-软件工程"><span class="toc-text">软件测试&amp;软件工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#测试模型"><span class="toc-text">测试模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#V模型"><span class="toc-text">V模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#V模型的剖析"><span class="toc-text">V模型的剖析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#开发阶段-V的左边"><span class="toc-text">开发阶段(V的左边)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#测试阶段-V的右边"><span class="toc-text">测试阶段(V的右边)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#V模型的优点"><span class="toc-text">V模型的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#V模型的缺点"><span class="toc-text">V模型的缺点</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -753,7 +792,7 @@
   <section class='widget category'>
     
 <header class='pure'>
-  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Categories</div>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
   
     <a class="rightBtn"
     
@@ -775,7 +814,7 @@
         
           <li><a class="flat-box" title="/categories/好文收藏/" href="/categories/好文收藏/"><div class='name'>好文收藏</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/水文一篇/" href="/categories/水文一篇/"><div class='name'>水文一篇</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box" title="/categories/水文一篇/" href="/categories/水文一篇/"><div class='name'>水文一篇</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box" title="/categories/测试理论/" href="/categories/测试理论/"><div class='name'>测试理论</div><div class='badge'>(3)</div></a></li>
         
@@ -820,7 +859,7 @@
   <section class='widget tagcloud'>
     
 <header class='pure'>
-  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hot Tags</div>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
   
     <a class="rightBtn"
     
@@ -834,7 +873,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/Android/" style="font-size: 17.33px; color: #828282">Android</a> <a href="/tags/Flutter/" style="font-size: 14px; color: #999">Flutter</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Selenium/" style="font-size: 17.33px; color: #828282">Selenium</a> <a href="/tags/Web测试/" style="font-size: 14px; color: #999">Web测试</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/java/" style="font-size: 14px; color: #999">java</a> <a href="/tags/npm/" style="font-size: 14px; color: #999">npm</a> <a href="/tags/水文一篇/" style="font-size: 20.67px; color: #6c6c6c">水文一篇</a> <a href="/tags/测试理论/" style="font-size: 20.67px; color: #6c6c6c">测试理论</a> <a href="/tags/环境搭建/" style="font-size: 20.67px; color: #6c6c6c">环境搭建</a> <a href="/tags/算法训练/" style="font-size: 14px; color: #999">算法训练</a> <a href="/tags/自动化测试/" style="font-size: 24px; color: #555">自动化测试</a>
+      <a href="/tags/Android/" style="font-size: 17.33px; color: #828282">Android</a> <a href="/tags/Flutter/" style="font-size: 14px; color: #999">Flutter</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Selenium/" style="font-size: 17.33px; color: #828282">Selenium</a> <a href="/tags/Web测试/" style="font-size: 14px; color: #999">Web测试</a> <a href="/tags/docker/" style="font-size: 14px; color: #999">docker</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/java/" style="font-size: 14px; color: #999">java</a> <a href="/tags/npm/" style="font-size: 14px; color: #999">npm</a> <a href="/tags/水文一篇/" style="font-size: 17.33px; color: #828282">水文一篇</a> <a href="/tags/测试理论/" style="font-size: 20.67px; color: #6c6c6c">测试理论</a> <a href="/tags/环境搭建/" style="font-size: 20.67px; color: #6c6c6c">环境搭建</a> <a href="/tags/算法训练/" style="font-size: 14px; color: #999">算法训练</a> <a href="/tags/自动化测试/" style="font-size: 24px; color: #555">自动化测试</a>
     </div>
   </section>
 
@@ -996,19 +1035,19 @@
     </div>
   
   <br>
-  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
-    Use
+    本站使用
     <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
-    as theme
+    作为主题
     
-      , 
-      total visits
+      ，
+      总访问量为
       <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-      times
+      次
     
-    . 
+    。
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -1131,15 +1170,15 @@
 <!-- 复制 -->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
-  let COPY_SUCCESS = "Copied";
-  let COPY_FAILURE = "Copy failed";
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
   /*页面载入完成后，创建复制按钮*/
   !function (e, t, a) {
     /* code */
     var initCopyCode = function(){
       var copyHtml = '';
       copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
       copyHtml += '</button>';
       $(".highlight .code pre").before(copyHtml);
       var clipboard = new ClipboardJS('.btn-copy', {
