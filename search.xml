@@ -4,26 +4,75 @@
   
     
     <entry>
-      <title>W模型的优缺点</title>
-      <link href="/2019/09/28/W%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/"/>
-      <url>/2019/09/28/W%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</url>
+      <title>vscode谜之操作</title>
+      <link href="/2019/10/02/vscode%E8%B0%9C%E4%B9%8B%E6%93%8D%E4%BD%9C/"/>
+      <url>/2019/10/02/vscode%E8%B0%9C%E4%B9%8B%E6%93%8D%E4%BD%9C/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<!-- 阅读全文 --><h1 id="vscode撤销与反撤销热键"><a href="#vscode撤销与反撤销热键" class="headerlink" title="vscode撤销与反撤销热键"></a>vscode撤销与反撤销热键</h1><ul><li><p><kbd>Ctrl</kbd>+<kbd>z</kbd> 撤销</p></li><li><p><kbd>Ctrl</kbd>+<kbd>shift</kbd>+<kbd>z</kbd> 取消撤销</p></li></ul><h1 id="谜之恢复功能"><a href="#谜之恢复功能" class="headerlink" title="谜之恢复功能"></a>谜之恢复功能</h1><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191002231735.png" alt="什么鬼的恢复"></p><ul><li>刚刚写在<code>W模型优缺点</code>文章总结，想使用上面的<code>恢复</code>功能取消撤销，结果没有效果。然后按了N次，结果把文章弄没了。真难受😫<br>暂时不清楚<code>恢复</code>的功能有啥用，反正已经被不熟悉快捷键教训了一顿，真的要熟悉快捷键，否则效果很惨。</li></ul><h1 id="自动保存是个好功能"><a href="#自动保存是个好功能" class="headerlink" title="自动保存是个好功能"></a>自动保存是个好功能</h1><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191002233433.png" alt="使用保存参数"></p><p>❗ 参数修改后重启再生效</p>]]></content>
       
       
+      <categories>
+          
+          <category> 水文一篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 水文一篇 </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title></title>
+      <title>W模型的优缺点</title>
+      <link href="/2019/09/28/W%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/"/>
+      <url>/2019/09/28/W%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</url>
+      
+        <content type="html"><![CDATA[<!-- 阅读全文 --><h1 id="W模型"><a href="#W模型" class="headerlink" title="W模型"></a>W模型</h1><ul><li><p>W模型由Evolutif公司提出：开发一个V，测试一个V，组成的W模型；</p></li><li><p>测试伴随着整个软件开发周期，并且测试的对象不仅仅是程序，需求和设计同样要测试。</p></li></ul><h2 id="W模型示意图"><a href="#W模型示意图" class="headerlink" title="W模型示意图"></a>W模型示意图</h2><fancybox>![W模型](https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191002155511.png)</fancybox><ul><li><p>软件开发流程：需求分析 》 概要分析 》 详细设计 》 编码 》 集成 》 实施 》 交付</p></li><li><p>测试阶段：验收/系统测试设计 》 集成测试设计 》 单元测试设计 》 单元测试 》 集成测试 》 系统测试 》 验收测试</p></li></ul><p>把要测试的东西都设计一遍</p><h2 id="W模型优缺点"><a href="#W模型优缺点" class="headerlink" title="W模型优缺点"></a>W模型优缺点</h2><h3 id="W模型的优点："><a href="#W模型的优点：" class="headerlink" title="W模型的优点："></a>W模型的优点：</h3><ul><li><p>开发强调测试伴随着整个软件开发周期，而且测试的对象不仅仅是程序，需求和概要设计同样要测试；</p></li><li><p>更早地接入测试，可以发现开发初期地缺陷，那么可以用更加低的成本进行缺陷修复。</p></li><li><p>同样是分阶段的工作，便于控制项目过程。</p></li></ul><h3 id="W模型的缺点："><a href="#W模型的缺点：" class="headerlink" title="W模型的缺点："></a>W模型的缺点：</h3><ul><li>依赖于软件开发和软件测试依然保持一前一后地线性关系，依然无法支持迭代、自发性和需求等变更调整；</li></ul><blockquote><p>不过相对于V模型来说已经是很大的改进了</p></blockquote><ul><li>对于当前很多项目，在执行地过程中根本不产生文档，那么W模型基本无法适用；</li></ul><blockquote><p>当进行验收/系统测试、集成测试计划等测试计划需要编写时，前提是先有需求分析、概要分析等对应阶段的文档作参考，否则后面的步骤无法进行。</p></blockquote><fancybox>![参考](https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191003231507.png)</fancybox><ul><li>使用起来技术复杂度很高，对于需求和设计的测试要求很高，对于需求和设计要求很高，实践起来困难。</li></ul><blockquote><p>在进行需求分析时，需要测试工程师、用户等关键人物一起进行需求讨论会，一起讨论项目经理完成的需求分析文档还有什么地方需要改进。团队的所有技术能力要一定的高水平，否则W模型就不能更好的发挥它的作用。例如：项目经理在需求分析上没有分析到位，测试工程师是个新手，不了解该项目的整体流程，不清楚项目要实现什么功能，会上没能提出建设性的问题，结果就是整个软件工程到了编码阶段了才发现问题。所以W模型要求整个团队技术力要高，否则后期问题在编码阶段才发现，不仅浪费人力，修改的难度也高很多。</p></blockquote><fancybox>![敏捷测试](https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191003232636.png)</fancybox>]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试理论 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试理论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>代码评审</title>
       <link href="/2019/09/24/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/"/>
       <url>/2019/09/24/%E4%BB%A3%E7%A0%81%E5%AE%A1%E6%9F%A5/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<!-- 阅读全文 --><h1 id="代码评审-code-review"><a href="#代码评审-code-review" class="headerlink" title="代码评审(code review)"></a>代码评审(code review)</h1><h2 id="对于代码格式化的个人感想"><a href="#对于代码格式化的个人感想" class="headerlink" title="对于代码格式化的个人感想"></a>对于代码格式化的个人感想</h2><p><strong>关于写代码,我也是到处随便复制粘贴,能运行就好了.但是这样会给以后的你观看造成麻烦,会非常后悔以前的自己到底在写什么屎.所以代码缩进等等一定要规定好,刚刚逛论坛发现别人正在讨论这个问题,并给出了各式各样的解决方案，决定截图收藏一波,提醒下自己.</strong></p><h2 id="论坛截图"><a href="#论坛截图" class="headerlink" title="论坛截图"></a>论坛截图</h2><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20190924230618.png" alt="代码格式化的争论"></p><p><strong>论坛地址：</strong><br><a href="https://www.v2ex.com/t/603629#reply109" target="_blank" rel="noopener">https://www.v2ex.com/t/603629#reply109</a></p><h2 id="代码评审概念"><a href="#代码评审概念" class="headerlink" title="代码评审概念"></a>代码评审概念</h2><ul><li>地址</li></ul><p><a href="https://baike.baidu.com/item/%E4%BB%A3%E7%A0%81%E8%AF%84%E5%AE%A1/8960487?fromtitle=Code%20Review&amp;fromid=8466134&amp;fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/%E4%BB%A3%E7%A0%81%E8%AF%84%E5%AE%A1/8960487?fromtitle=Code%20Review&amp;fromid=8466134&amp;fr=aladdin</a></p><h2 id="代码评审的相关帖子"><a href="#代码评审的相关帖子" class="headerlink" title="代码评审的相关帖子"></a>代码评审的相关帖子</h2><ul><li><p><a href="https://blog.csdn.net/Cy_LightBule/article/details/87877255" target="_blank" rel="noopener">版本管理 —— Code Review</a></p></li><li><p><a href="https://www.jianshu.com/p/f79c4e948954" target="_blank" rel="noopener">CodeReview规范</a></p></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 水文一篇 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 水文一篇 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -337,9 +386,9 @@
       
         <tags>
             
-            <tag> Selenium </tag>
-            
             <tag> 自动化测试 </tag>
+            
+            <tag> Selenium </tag>
             
         </tags>
       
@@ -364,11 +413,11 @@
       
         <tags>
             
-            <tag> Python </tag>
+            <tag> 自动化测试 </tag>
             
             <tag> Selenium </tag>
             
-            <tag> 自动化测试 </tag>
+            <tag> Python </tag>
             
             <tag> Web测试 </tag>
             
