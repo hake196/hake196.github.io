@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>软件测试分类</title>
+      <link href="/2019/10/04/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/"/>
+      <url>/2019/10/04/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="软件测试分类"><a href="#软件测试分类" class="headerlink" title="软件测试分类"></a>软件测试分类</h1><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191004222440.png" alt="测试分类"></p><h2 id="按是否查看源代码"><a href="#按是否查看源代码" class="headerlink" title="按是否查看源代码"></a>按是否查看源代码</h2><ul><li>黑盒测试（black-box testing）<blockquote><p>又称数据驱动测试，完全不考虑程序内部结构和内部特性，注重于测试软件的功能需求，只关心软件的输入数据和输出数据。</p></blockquote></li></ul><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191004225059.png" alt="黑盒测试"></p><ul><li><p>白盒测试（whlte-box testing）</p><blockquote><p>指的是把盒子打开，去研究里面的源代码和程序结构。</p></blockquote></li><li><p>灰盒测试</p><blockquote><p>灰盒测试，是介于白盒测试与黑盒测试之间的一种测试，既可以保证黑盒的关注点又可掌握白盒的内部结构，但不会去对内部程序功能和运行做详细了解，灰盒测试结合了白盒测试和黑盒测试的要素。既看代码又看整体流程（功能）的测试。</p></blockquote></li></ul><h2 id="按是否运行分类"><a href="#按是否运行分类" class="headerlink" title="按是否运行分类"></a>按是否运行分类</h2><ul><li><p>静态测试（static testing）,指不实际运行被测软件，而只是静态地检查程序代码、界面或文档中可能存在的错误过程。（w模型的第一个V，测试人员尽早地介入测试，看看需求文档、UI设计稿是否正确）</p></li><li><p>动态测试（dynamic testing）,是指实际运行被测程序，输入相应的测试数据，检查实际输出结果和预期结果是否相符的过程。</p></li></ul><h2 id="其他（了解即可）"><a href="#其他（了解即可）" class="headerlink" title="其他（了解即可）"></a>其他（了解即可）</h2><ul><li><p>回归测试</p><blockquote><p>指软件修复好问题后再次回来测试，验证问题是否已经解决。</p></blockquote></li><li><p>冒烟测试</p><blockquote><p>指的是整体测试的流程，把这个软件最基本的所有流程都测试一遍。</p></blockquote></li><li><p>随机测试（探索测试）</p><blockquote><p>随机测试主要是对被测软件的一些重要功能进行复测，也包括测试那些当前的测试用例没有覆盖到的部分。另外，对于软件更新和新增加的功能要重点测试。重点对一些特殊点情况点、特殊的使用环境、并发性、进行检查。尤其对以前测试发现的重大Bug，进行再次测试，可以结合回归测试（Regressivetesting）一起进行。</p></blockquote></li><li><p>验收测试</p><blockquote><p>软件正式版本推出之前的几个版本，需要有人测试一下，看看是不是有问题。在开发该软件的公司内部的由该公司内部人员测试的称为：Alpha测试，Alpha测试主要看有没有功能缺失或者系统错误，Alpha测试主要看有没有功能缺失或系统错误，Alpha测试完成后一般不会有大问题了。然后把软件拿给用户测试，称为beta测试，主要是看用户对软件外观、使用方便等的反应。这么多的测试版一方面为了最终产品尽可能地满足用户地需求，另一方面为了尽量减少bug。然后做过一些修改，成为正式发布地候选版本时，叫做gamma(现在叫做RC - Release Candidate).</p></blockquote></li></ul><blockquote><p>简单来说，阿尔法测试主要时测试人员在开发环境下的测试，贝塔测试是在实际环境下的测试，或者公司内部人员在模拟真实环境中的测试。</p></blockquote><p><strong>α测试</strong></p><blockquote><p>Alpha是内测版本，即现在所说的CB，此版本表示该软件仅仅是一个初步完成品，通常只在软件开发者内部交流，也有少部分发布给专业测试人员。一般而言，该版本软件的bug较多，普通用户最好不要安装。</p></blockquote><p><strong>β测试</strong></p><blockquote><p>Beta是公测版本，是对所有用户开放的测试版本。该版本相对于α版已有了很大的改进，消除了严重的错误，但还是存在着一些缺陷，需要经过大规模的发布测试来进一步消除，将结果反馈给开发者，开发者们再进行有针对性的修改。该版本也不适合一般用户安装。</p></blockquote><p><strong>γ测试</strong></p><blockquote><p>Gamma版本，指的是软件版本正式发行的候选版。该版本已经相当成熟了，与即将发行的正式版相差无几，成为正式发布的候选版本</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 测试理论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>黑盒测试</title>
+      <link href="/2019/10/04/%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/"/>
+      <url>/2019/10/04/%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<!-- 阅读全文 --><h1 id="黑盒测试（black-box-testing）"><a href="#黑盒测试（black-box-testing）" class="headerlink" title="黑盒测试（black-box testing）"></a>黑盒测试（black-box testing）</h1><blockquote><p>黑盒测试又称驱动测试，完全不考虑程序内部结构和内部特性，注重于测试软件的功能需求，只关心软件的输入数据和输出数据。</p></blockquote><p>例：比如测试一个输入框要求你输入什么东西，点击确定就出现什么界面。但是这过程你不需要知道是由什么代码实现的。</p><p><strong>黑盒测试能发现以下几类错误：</strong></p><ul><li><p>功能不对或功能遗漏。</p></li><li><p>界面错误。</p></li></ul><blockquote><p>程序对照着设计师的ui设计稿（.psd文件），看看界面布局、颜色等等元素有没有错误</p></blockquote><ul><li><p>数据库访问或者处理错误。</p></li><li><p>性能问题。</p><blockquote><p>例如淘宝双十一节，双十一节肯定有很多人同时登录，这对服务器的性能十分考验。</p></blockquote></li></ul><h2 id="黑盒测试的缺点"><a href="#黑盒测试的缺点" class="headerlink" title="黑盒测试的缺点"></a>黑盒测试的缺点</h2><ul><li>不能测试程序内部特定部位；</li></ul><blockquote><p>一个程序写完了，如果不看源代码的话，那么只能表面上看到一些直观的问题。能够体现出来的问题可以测试，如果当时没能体现出来的问题，就不能测试了。如：多输入一些文字、输入非法字符等这些情况。如果代码中有些输入限制的话，能看到代码的你一定会一目了然(前提是有计算机编程基础)</p></blockquote><ul><li>如果程序未执行的代码无法发现；<blockquote><p>比如：在一个输入框里正常输入一些文字点击确定就会提交数据，这是黑盒测试能够测试出来的。但是在输入框进行一些特殊的情况的时候，如：多输入一些文字、输入非法字符等这些情况。一般代码都会对这些特殊情况进行限制的，如果通过查看代码会更加直观的发现这些限制和各种特殊情况(限制账号只能输入正确的邮箱、正确输入账号名但密码错误会发生什么等等)。</p></blockquote></li></ul><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191004170339.png" alt="一部分"></p><ul><li>不可能做到穷举测试<blockquote><p>例如输入用户名的时候，只能输入6~12位文字，穷举就是把所有的情况都一一列举出来，如果没有看代码黑盒测试是做不到穷举测试的。</p></blockquote></li></ul><h2 id="黑盒测试的优点"><a href="#黑盒测试的优点" class="headerlink" title="黑盒测试的优点"></a>黑盒测试的优点</h2><ul><li><p>测试人员不需要了解实现得细节，包括特定的编程语言(没有编程经验的人也可以设计测试用例)；</p></li><li><p>测试人员和编程人员是互相独立的(黑盒测试用例设计与程序如何实现无关)；</p></li><li><p>从用户的角度进行测试，很容易被接受和理解；</p></li><li><p>有助于暴露任何与规格不一致或者歧义的地方；</p><blockquote><p>就是看到功能遗漏和功能不一致的地方，直观地发现问题</p></blockquote></li></ul><h2 id="黑盒测试的分类"><a href="#黑盒测试的分类" class="headerlink" title="黑盒测试的分类"></a>黑盒测试的分类</h2><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191004184041.png" alt="分类"></p><h3 id="功能测试-function-testing"><a href="#功能测试-function-testing" class="headerlink" title="功能测试(function testing)"></a>功能测试(function testing)</h3><blockquote><p>是黑盒测试的一方面，它检查实际软件的功能是否符合用户的需求</p></blockquote><ul><li><p>逻辑功能测试（function testing）</p></li><li><p>界面测试（UI testing）</p></li><li><p>易用性测试（usability testing）</p></li><li><p>安装测试（installation testing）</p></li><li><p>兼容性测试（compatibility testing）</p></li></ul><p>1.逻辑功能测试：比如测试一个自动饮料售卖机，可以买5块、6块、2块钱的饮料，放钞口可以接受5块、10块、20块等金额。测试如果选了6块钱的饮料给了5块钱会怎样，屏幕会提示什么信息、当选择了一瓶软料后，会给出什么样的支付码……等等测试</p><p>2.界面测试：将测试软件的UI界面和设计师设计的UI设计稿对比，看看是否和设计稿是否一致</p><p>3.易用性测试：有些app的功能十分易用，例如微信的批量发送信息、聊天记录的合并转发、微信小程序的悬浮小窗等等功能，测试其他app可以参考以下因素：是否方便用户的操作习惯（逻辑）等等。</p><p>4.安装测试：安装的过程也要考虑，例如一个要测试的app在各种平台、机型安装是否正常……</p><p>5.兼容性测试：测试app是否在不同的系统版本中能够正常使用，例如安卓的要考虑最低兼容的是Android 4.4.4,还是6.0……，如果网页应用的话，要考虑浏览器的兼容</p><h3 id="性能测试（performance-testing）峰值"><a href="#性能测试（performance-testing）峰值" class="headerlink" title="性能测试（performance testing）峰值"></a>性能测试（performance testing）峰值</h3><blockquote><p>是软件测试的高端领域，性能测试工程师的待遇和白盒测试工程师不相上下，通常我们所说的高级软件测试工程师一般就是指性能测试或是白盒测试工程师。</p></blockquote><ul><li><p>时间性能（事务响应时间等）：例测试一个搜索框，输入框输入关键字进行搜索时，列出的信息花了多长时间、网页响应的速度如何、app开发的时间需要多少，这些都算是性能方面的问题</p></li><li><p>空间性能（系统资源消耗）：一款app安装占用了多少内存（rom），运行时消耗了多少运存（ram）</p></li><li><p>一般性能测试 : 考察一款app能不能正常使用</p></li><li><p>稳定性测试 ：考虑一款app或者网页长时间打开，不停的点击，不停使用，最后能否正常使用</p></li><li><p>负载测试：通过负载测试来确定在各种工作负载下，系统各项性能指标的变化情况。</p></li></ul><blockquote><p>例如：淘宝网页双十一在线人数xxx,还能正常使用</p></blockquote><ul><li>压力测试： 通过确定一个系统的瓶颈或者刚好不能接受的性能点，来获得系统能够提供的最大服务级别。 </li></ul><blockquote><p>在用户高强度的访问时，服务器能否正常的运作</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 测试理论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vscode谜之操作</title>
       <link href="/2019/10/02/vscode%E8%B0%9C%E4%B9%8B%E6%93%8D%E4%BD%9C/"/>
       <url>/2019/10/02/vscode%E8%B0%9C%E4%B9%8B%E6%93%8D%E4%BD%9C/</url>
@@ -222,9 +260,9 @@
       
         <tags>
             
-            <tag> 自动化测试 </tag>
-            
             <tag> 测试理论 </tag>
+            
+            <tag> 自动化测试 </tag>
             
         </tags>
       
@@ -276,9 +314,9 @@
       
         <tags>
             
-            <tag> 自动化测试 </tag>
-            
             <tag> 测试理论 </tag>
+            
+            <tag> 自动化测试 </tag>
             
         </tags>
       
@@ -303,9 +341,9 @@
       
         <tags>
             
-            <tag> 环境搭建 </tag>
-            
             <tag> Flutter </tag>
+            
+            <tag> 环境搭建 </tag>
             
         </tags>
       
@@ -357,11 +395,11 @@
       
         <tags>
             
+            <tag> 环境搭建 </tag>
+            
             <tag> Android </tag>
             
             <tag> 水文一篇 </tag>
-            
-            <tag> 环境搭建 </tag>
             
         </tags>
       
@@ -386,9 +424,9 @@
       
         <tags>
             
-            <tag> 自动化测试 </tag>
-            
             <tag> Selenium </tag>
+            
+            <tag> 自动化测试 </tag>
             
         </tags>
       
@@ -413,11 +451,11 @@
       
         <tags>
             
-            <tag> 自动化测试 </tag>
-            
             <tag> Python </tag>
             
             <tag> Selenium </tag>
+            
+            <tag> 自动化测试 </tag>
             
             <tag> Web测试 </tag>
             

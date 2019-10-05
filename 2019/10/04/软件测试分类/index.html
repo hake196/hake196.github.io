@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Tag: java | hanke196</title>
+  <title>软件测试分类 | hanke196</title>
   
+  
+  <meta name="description" content="软件测试理论">
   
 
   
@@ -46,7 +48,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover  half'>
+    <cover class='cover post half'>
       
         
   <h1 class='title'>Welcome</h1>
@@ -238,28 +240,31 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
-      
-<div class='l_main'>
+      <div class='l_main'>
   
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
     
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
 
 
   <section class='meta'>
+    
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme=""
+    data-mini=true 
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="song"
+    data-id="499009"
+    data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
     
     
     <div class="meta" id="header-meta">
@@ -270,7 +275,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-23</p>
+    <p>2019-10-04</p>
   </a>
 </div>
 
@@ -278,14 +283,6 @@
         
           
             
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/java/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>java</p>
-    </a>
-  </div>
-
 
           
         
@@ -297,44 +294,161 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      Java开源项目9.23
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <h1 id="软件测试分类"><a href="#软件测试分类" class="headerlink" title="软件测试分类"></a>软件测试分类</h1><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191004222440.png" alt="测试分类"></p>
+<h2 id="按是否查看源代码"><a href="#按是否查看源代码" class="headerlink" title="按是否查看源代码"></a>按是否查看源代码</h2><ul>
+<li>黑盒测试（black-box testing）<blockquote>
+<p>又称数据驱动测试，完全不考虑程序内部结构和内部特性，注重于测试软件的功能需求，只关心软件的输入数据和输出数据。</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191004225059.png" alt="黑盒测试"></p>
+<ul>
+<li><p>白盒测试（whlte-box testing）</p>
+<blockquote>
+<p>指的是把盒子打开，去研究里面的源代码和程序结构。</p>
+</blockquote>
+</li>
+<li><p>灰盒测试</p>
+<blockquote>
+<p>灰盒测试，是介于白盒测试与黑盒测试之间的一种测试，既可以保证黑盒的关注点又可掌握白盒的内部结构，但不会去对内部程序功能和运行做详细了解，灰盒测试结合了白盒测试和黑盒测试的要素。既看代码又看整体流程（功能）的测试。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="按是否运行分类"><a href="#按是否运行分类" class="headerlink" title="按是否运行分类"></a>按是否运行分类</h2><ul>
+<li><p>静态测试（static testing）,指不实际运行被测软件，而只是静态地检查程序代码、界面或文档中可能存在的错误过程。（w模型的第一个V，测试人员尽早地介入测试，看看需求文档、UI设计稿是否正确）</p>
+</li>
+<li><p>动态测试（dynamic testing）,是指实际运行被测程序，输入相应的测试数据，检查实际输出结果和预期结果是否相符的过程。</p>
+</li>
+</ul>
+<h2 id="其他（了解即可）"><a href="#其他（了解即可）" class="headerlink" title="其他（了解即可）"></a>其他（了解即可）</h2><ul>
+<li><p>回归测试</p>
+<blockquote>
+<p>指软件修复好问题后再次回来测试，验证问题是否已经解决。</p>
+</blockquote>
+</li>
+<li><p>冒烟测试</p>
+<blockquote>
+<p>指的是整体测试的流程，把这个软件最基本的所有流程都测试一遍。</p>
+</blockquote>
+</li>
+<li><p>随机测试（探索测试）</p>
+<blockquote>
+<p>随机测试主要是对被测软件的一些重要功能进行复测，也包括测试那些当前的测试用例没有覆盖到的部分。另外，对于软件更新和新增加的功能要重点测试。重点对一些特殊点情况点、特殊的使用环境、并发性、进行检查。尤其对以前测试发现的重大Bug，进行再次测试，可以结合回归测试（Regressivetesting）一起进行。</p>
+</blockquote>
+</li>
+<li><p>验收测试</p>
+<blockquote>
+<p>软件正式版本推出之前的几个版本，需要有人测试一下，看看是不是有问题。在开发该软件的公司内部的由该公司内部人员测试的称为：Alpha测试，Alpha测试主要看有没有功能缺失或者系统错误，Alpha测试主要看有没有功能缺失或系统错误，Alpha测试完成后一般不会有大问题了。然后把软件拿给用户测试，称为beta测试，主要是看用户对软件外观、使用方便等的反应。这么多的测试版一方面为了最终产品尽可能地满足用户地需求，另一方面为了尽量减少bug。然后做过一些修改，成为正式发布地候选版本时，叫做gamma(现在叫做RC - Release Candidate).</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>简单来说，阿尔法测试主要时测试人员在开发环境下的测试，贝塔测试是在实际环境下的测试，或者公司内部人员在模拟真实环境中的测试。</p>
+</blockquote>
+<p><strong>α测试</strong></p>
+<blockquote>
+<p>Alpha是内测版本，即现在所说的CB，此版本表示该软件仅仅是一个初步完成品，通常只在软件开发者内部交流，也有少部分发布给专业测试人员。一般而言，该版本软件的bug较多，普通用户最好不要安装。</p>
+</blockquote>
+<p><strong>β测试</strong></p>
+<blockquote>
+<p>Beta是公测版本，是对所有用户开放的测试版本。该版本相对于α版已有了很大的改进，消除了严重的错误，但还是存在着一些缺陷，需要经过大规模的发布测试来进一步消除，将结果反馈给开发者，开发者们再进行有针对性的修改。该版本也不适合一般用户安装。</p>
+</blockquote>
+<p><strong>γ测试</strong></p>
+<blockquote>
+<p>Gamma版本，指的是软件版本正式发行的候选版。该版本已经相当成熟了，与即将发行的正式版相差无几，成为正式发布的候选版本</p>
+</blockquote>
+
+      </div>
       
-        <div class="readmore">
-          <a href="/2019/09/23/Java开源项目2019.9.23/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-05T08:07:43+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2019年10月5日</p>
+  </a>
+</div>
+
+        
       
     </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/java/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> java</a>
-        
-      </div>
-    
   </section>
-</article>
 
-          </div>
-        
+
       
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
+      
+          <div class="prev-next">
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2019/10/04/黑盒测试/" rel="prev" title="黑盒测试">
+                                  
+                                      黑盒测试
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/测试理论/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 测试理论</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+          </div>
+      
+    </section>
+  </article>
 
-  
 
 
-    
-  
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+        <section id="comments">
+          <div id="gitalk-container"></div>
+        </section>
+      
+      
+    </section>
+  </article>
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '软件测试分类',
+      tools: true
+    }
+  </script>
+
+
 </div>
 <aside class='l_side'>
   
@@ -418,6 +532,25 @@
           
         
           
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#软件测试分类"><span class="toc-text">软件测试分类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#按是否查看源代码"><span class="toc-text">按是否查看源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#按是否运行分类"><span class="toc-text">按是否运行分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他（了解即可）"><span class="toc-text">其他（了解即可）</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+            
           
         
           
@@ -626,6 +759,111 @@
           
         
       
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+
+
+  <section class='widget music'>
+    
+<header class='pure'>
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn"
+    
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_blank"
+    
+    href="https://music.163.com/#/user/home?id=297694434"
+    title="https://music.163.com/#/user/home?id=297694434">
+    <i class="far fa-heart fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme="#1BCDFC"
+    
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="playlist"
+    data-id="2280558284"
+    data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
+
+            
+          
+        
+      
     
 
   
@@ -773,6 +1011,24 @@
 
 
 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: "984fc9a8a4cbaef2763c",
+      clientSecret: "ebb5505dacae3397e5e9c07c96c63226685b0932",
+      repo: "hake196.github.io",
+      owner: "hake196",
+      admin: "hake196",
+      
+        id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+      
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
+  </script>
 
 
 

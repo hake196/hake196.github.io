@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Tag: java | hanke196</title>
+  <title>黑盒测试 | hanke196</title>
   
+  
+  <meta name="description" content="黑盒测试">
   
 
   
@@ -46,7 +48,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover  half'>
+    <cover class='cover post half'>
       
         
   <h1 class='title'>Welcome</h1>
@@ -238,28 +240,31 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
-      
-<div class='l_main'>
+      <div class='l_main'>
   
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
     
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
 
 
   <section class='meta'>
+    
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme=""
+    data-mini=true 
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="song"
+    data-id="22709972"
+    data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
     
     
     <div class="meta" id="header-meta">
@@ -270,7 +275,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-23</p>
+    <p>2019-10-04</p>
   </a>
 </div>
 
@@ -278,14 +283,6 @@
         
           
             
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/java/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>java</p>
-    </a>
-  </div>
-
 
           
         
@@ -297,44 +294,219 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      Java开源项目9.23
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <!-- 阅读全文 -->
+
+<h1 id="黑盒测试（black-box-testing）"><a href="#黑盒测试（black-box-testing）" class="headerlink" title="黑盒测试（black-box testing）"></a>黑盒测试（black-box testing）</h1><blockquote>
+<p>黑盒测试又称驱动测试，完全不考虑程序内部结构和内部特性，注重于测试软件的功能需求，只关心软件的输入数据和输出数据。</p>
+</blockquote>
+<p>例：比如测试一个输入框要求你输入什么东西，点击确定就出现什么界面。但是这过程你不需要知道是由什么代码实现的。</p>
+<p><strong>黑盒测试能发现以下几类错误：</strong></p>
+<ul>
+<li><p>功能不对或功能遗漏。</p>
+</li>
+<li><p>界面错误。</p>
+</li>
+</ul>
+<blockquote>
+<p>程序对照着设计师的ui设计稿（.psd文件），看看界面布局、颜色等等元素有没有错误</p>
+</blockquote>
+<ul>
+<li><p>数据库访问或者处理错误。</p>
+</li>
+<li><p>性能问题。</p>
+<blockquote>
+<p>例如淘宝双十一节，双十一节肯定有很多人同时登录，这对服务器的性能十分考验。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="黑盒测试的缺点"><a href="#黑盒测试的缺点" class="headerlink" title="黑盒测试的缺点"></a>黑盒测试的缺点</h2><ul>
+<li>不能测试程序内部特定部位；</li>
+</ul>
+<blockquote>
+<p>一个程序写完了，如果不看源代码的话，那么只能表面上看到一些直观的问题。能够体现出来的问题可以测试，如果当时没能体现出来的问题，就不能测试了。如：多输入一些文字、输入非法字符等这些情况。如果代码中有些输入限制的话，能看到代码的你一定会一目了然(前提是有计算机编程基础)</p>
+</blockquote>
+<ul>
+<li>如果程序未执行的代码无法发现；<blockquote>
+<p>比如：在一个输入框里正常输入一些文字点击确定就会提交数据，这是黑盒测试能够测试出来的。但是在输入框进行一些特殊的情况的时候，如：多输入一些文字、输入非法字符等这些情况。一般代码都会对这些特殊情况进行限制的，如果通过查看代码会更加直观的发现这些限制和各种特殊情况(限制账号只能输入正确的邮箱、正确输入账号名但密码错误会发生什么等等)。</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191004170339.png" alt="一部分"></p>
+<ul>
+<li>不可能做到穷举测试<blockquote>
+<p>例如输入用户名的时候，只能输入6~12位文字，穷举就是把所有的情况都一一列举出来，如果没有看代码黑盒测试是做不到穷举测试的。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="黑盒测试的优点"><a href="#黑盒测试的优点" class="headerlink" title="黑盒测试的优点"></a>黑盒测试的优点</h2><ul>
+<li><p>测试人员不需要了解实现得细节，包括特定的编程语言(没有编程经验的人也可以设计测试用例)；</p>
+</li>
+<li><p>测试人员和编程人员是互相独立的(黑盒测试用例设计与程序如何实现无关)；</p>
+</li>
+<li><p>从用户的角度进行测试，很容易被接受和理解；</p>
+</li>
+<li><p>有助于暴露任何与规格不一致或者歧义的地方；</p>
+<blockquote>
+<p>就是看到功能遗漏和功能不一致的地方，直观地发现问题</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="黑盒测试的分类"><a href="#黑盒测试的分类" class="headerlink" title="黑盒测试的分类"></a>黑盒测试的分类</h2><p><img src="https://cdn.jsdelivr.net/gh/hake196/My_imghome/ke196/20191004184041.png" alt="分类"></p>
+<h3 id="功能测试-function-testing"><a href="#功能测试-function-testing" class="headerlink" title="功能测试(function testing)"></a>功能测试(function testing)</h3><blockquote>
+<p>是黑盒测试的一方面，它检查实际软件的功能是否符合用户的需求</p>
+</blockquote>
+<ul>
+<li><p>逻辑功能测试（function testing）</p>
+</li>
+<li><p>界面测试（UI testing）</p>
+</li>
+<li><p>易用性测试（usability testing）</p>
+</li>
+<li><p>安装测试（installation testing）</p>
+</li>
+<li><p>兼容性测试（compatibility testing）</p>
+</li>
+</ul>
+<p>1.逻辑功能测试：比如测试一个自动饮料售卖机，可以买5块、6块、2块钱的饮料，放钞口可以接受5块、10块、20块等金额。测试如果选了6块钱的饮料给了5块钱会怎样，屏幕会提示什么信息、当选择了一瓶软料后，会给出什么样的支付码……等等测试</p>
+<p>2.界面测试：将测试软件的UI界面和设计师设计的UI设计稿对比，看看是否和设计稿是否一致</p>
+<p>3.易用性测试：有些app的功能十分易用，例如微信的批量发送信息、聊天记录的合并转发、微信小程序的悬浮小窗等等功能，测试其他app可以参考以下因素：是否方便用户的操作习惯（逻辑）等等。</p>
+<p>4.安装测试：安装的过程也要考虑，例如一个要测试的app在各种平台、机型安装是否正常……</p>
+<p>5.兼容性测试：测试app是否在不同的系统版本中能够正常使用，例如安卓的要考虑最低兼容的是Android 4.4.4,还是6.0……，如果网页应用的话，要考虑浏览器的兼容</p>
+<h3 id="性能测试（performance-testing）峰值"><a href="#性能测试（performance-testing）峰值" class="headerlink" title="性能测试（performance testing）峰值"></a>性能测试（performance testing）峰值</h3><blockquote>
+<p>是软件测试的高端领域，性能测试工程师的待遇和白盒测试工程师不相上下，通常我们所说的高级软件测试工程师一般就是指性能测试或是白盒测试工程师。</p>
+</blockquote>
+<ul>
+<li><p>时间性能（事务响应时间等）：例测试一个搜索框，输入框输入关键字进行搜索时，列出的信息花了多长时间、网页响应的速度如何、app开发的时间需要多少，这些都算是性能方面的问题</p>
+</li>
+<li><p>空间性能（系统资源消耗）：一款app安装占用了多少内存（rom），运行时消耗了多少运存（ram）</p>
+</li>
+<li><p>一般性能测试 : 考察一款app能不能正常使用</p>
+</li>
+<li><p>稳定性测试 ：考虑一款app或者网页长时间打开，不停的点击，不停使用，最后能否正常使用</p>
+</li>
+<li><p>负载测试：通过负载测试来确定在各种工作负载下，系统各项性能指标的变化情况。</p>
+</li>
+</ul>
+<blockquote>
+<p>例如：淘宝网页双十一在线人数xxx,还能正常使用</p>
+</blockquote>
+<ul>
+<li>压力测试： 通过确定一个系统的瓶颈或者刚好不能接受的性能点，来获得系统能够提供的最大服务级别。 </li>
+</ul>
+<blockquote>
+<p>在用户高强度的访问时，服务器能否正常的运作</p>
+</blockquote>
+
+      </div>
       
-        <div class="readmore">
-          <a href="/2019/09/23/Java开源项目2019.9.23/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
+        <br>
+        
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-04T22:02:33+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2019年10月4日</p>
+  </a>
+</div>
+
+        
       
     </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/java/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> java</a>
-        
-      </div>
-    
   </section>
-</article>
 
-          </div>
-        
+
       
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
+      
+          <div class="prev-next">
+              
+                  <section class="prev">
+                      <span class="art-item-left">
+                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                          <h4>
+                              <a href="/2019/10/04/软件测试分类/" rel="prev" title="软件测试分类">
+                                
+                                    软件测试分类
+                                
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/测试理论/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 测试理论</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2019/10/02/vscode谜之操作/" rel="prev" title="vscode谜之操作">
+                                  
+                                      vscode谜之操作
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/水文一篇/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> 水文一篇</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
+              
+          </div>
+      
+    </section>
+  </article>
 
-  
 
 
-    
-  
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+        <section id="comments">
+          <div id="gitalk-container"></div>
+        </section>
+      
+      
+    </section>
+  </article>
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '黑盒测试',
+      tools: true
+    }
+  </script>
+
+
 </div>
 <aside class='l_side'>
   
@@ -418,6 +590,25 @@
           
         
           
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#黑盒测试（black-box-testing）"><span class="toc-text">黑盒测试（black-box testing）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#黑盒测试的缺点"><span class="toc-text">黑盒测试的缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#黑盒测试的优点"><span class="toc-text">黑盒测试的优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#黑盒测试的分类"><span class="toc-text">黑盒测试的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#功能测试-function-testing"><span class="toc-text">功能测试(function testing)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#性能测试（performance-testing）峰值"><span class="toc-text">性能测试（performance testing）峰值</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </section>
+
+
+            
           
         
           
@@ -626,6 +817,111 @@
           
         
       
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+
+
+  <section class='widget music'>
+    
+<header class='pure'>
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn"
+    
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_blank"
+    
+    href="https://music.163.com/#/user/home?id=297694434"
+    title="https://music.163.com/#/user/home?id=297694434">
+    <i class="far fa-heart fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme="#1BCDFC"
+    
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="playlist"
+    data-id="2280558284"
+    data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
+
+            
+          
+        
+      
     
 
   
@@ -773,6 +1069,24 @@
 
 
 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: "984fc9a8a4cbaef2763c",
+      clientSecret: "ebb5505dacae3397e5e9c07c96c63226685b0932",
+      repo: "hake196.github.io",
+      owner: "hake196",
+      admin: "hake196",
+      
+        id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+      
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
+  </script>
 
 
 
